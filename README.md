@@ -12,6 +12,10 @@ My project is that analyzing Autism Spectrum Disorder (ASD) in terms of single-c
 ### We used the analysis R package for my project.
 * Seurat 4.0
 
+### Our Dataset :
+* GSE67835 (Healthy human brain samples, raw count matrix)
+* SRR9262932 (ASD prefrontal cortex tissue, Fastq files)
+
 ### We uploaded these files:
 * control_c1.rds : The healthy brain cortex Seurat object data. (Fluidigm C1 platform)
 * ASD_10x.rds : The ASD prefrontal cortex tissue Seurat object data. (10x Genomics platform)
