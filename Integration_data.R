@@ -182,5 +182,5 @@ FeaturePlot(data.combined, features = markers.to.plot, split.by = "orig.ident", 
             cols = c("grey", "red"))
 
 plots <- VlnPlot(data.combined, features = c("ARID1B", "ASH1L", "CHD2"), split.by = "orig.ident", group.by = "group",
-                 pt.size = 0, combine = FALSE, split.plot = TRUE)
+                 pt.size = 0, combine = FALSE)
 wrap_plots(plots = plots, ncol = 1)
