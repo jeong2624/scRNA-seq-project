@@ -7,7 +7,6 @@ My project is that analyzing Autism Spectrum Disorder (ASD) in terms of single-c
 ### We used the analysis tools for my project.
 * R >= 4.1.1
 * cellranger 7.0.0
-* python >= 3.7.13
 
 ### We used the analysis R package for my project.
 * Seurat 4.0
@@ -23,4 +22,4 @@ My project is that analyzing Autism Spectrum Disorder (ASD) in terms of single-c
 * 10x_ASD.R : scRNA-seq analysis code for ASD prefrontal cortex tissue.
 * Integration.R : scRNA-seq analysis code for integrated data. (healthy + ASD)
 * filtered_feature_bc_matrix : ASD scRNA-seq analysis raw count matrix. (using cellranger pipeline)
-* control_counts.csv : Healthy brain cortex raw count matrix. (using python)
+* control_counts.csv : Healthy brain cortex raw count matrix.
