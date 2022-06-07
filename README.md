@@ -18,3 +18,5 @@ My project is that analyzing Autism Spectrum Disorder (ASD) in terms of single-c
 * C1_control.R : scRNA-seq analysis code for healthy human cortex.
 * 10x_ASD.R : scRNA-seq analysis code for ASD prefrontal cortex tissue.
 * Integration.R : scRNA-seq analysis code for integrated data. (healthy + ASD)
+* filtered_feature_bc_matrix : ASD scRNA-seq analysis raw count matrix. (using cellranger pipeline)
+* control_counts.csv : Healthy brain cortex raw count matrix. (using python)
