@@ -181,10 +181,10 @@ data.combined@meta.data$group = Idents(data.combined)
 FeaturePlot(data.combined, features = markers.to.plot, split.by = "orig.ident", max.cutoff = 3,
             cols = c("grey", "red"))
 
-plots1 <- VlnPlot(data.combined, features = c("ARID1B", "ASH1L", "CHD2", "AFF2"), 
-                 split.by = "orig.ident", group.by = "group", pt.size = 0, combine = FALSE)
-wrap_plots(plots = plots1)
+plots <- VlnPlot(data.combined, features = c("ARID1B", "ASH1L", "CHD2", "AFF2", 
+                                             "MECP2", "CACNA1C", "SHANK2", "ATRX"), 
+                 split.by = "condition", split.plot = TRUE,
+                 group.by = "group", pt.size = 0, combine = FALSE)
 
-plots2 <- VlnPlot(data.combined, features = c("MECP2", "CACNA1C", "SHANK2", "ATRX"), 
-                  split.by = "orig.ident", group.by = "group", pt.size = 0, combine = FALSE)
-wrap_plots(plots = plots2)
+wrap_plots(plots = plots)
+
