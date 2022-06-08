@@ -6,7 +6,7 @@ My project is that analyzing Autism Spectrum Disorder (ASD) in terms of single-c
 
 ### We used the analysis tools for my project.
 * R >= 4.1.1
-* cellranger 7.0.0
+* cellranger 6.1.2
 
 ### We used the analysis R package for my project.
 * Seurat 4.0
