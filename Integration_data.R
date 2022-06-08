@@ -1,5 +1,5 @@
 "
-Created on Thr Jun 2 2022
+Created on Wed Jun 8 2022
 
 @author: Jeong-Woon, Park
 
@@ -136,7 +136,6 @@ markers %>%
   slice_max(n = 2, order_by = avg_log2FC)
 
 ### Assigning cell type identity to clusters
-if (FALSE){
 new.cluster.ids <- c("Excitatory neurons", "Excitatory neurons", "Inhibitory neurons", 
                      "Astrocyte", "Excitatory neurons", "Excitatory neurons", 
                      "Inhibitory neurons", "Inhibitory neurons", "OPC",
@@ -146,8 +145,8 @@ new.cluster.ids <- c("Excitatory neurons", "Excitatory neurons", "Inhibitory neu
 names(new.cluster.ids) <- levels(data.combined)
 data.combined <- RenameIdents(data.combined, new.cluster.ids)
 DimPlot(data.combined, reduction = "umap", label = TRUE, pt.size = 0.5)
-}
 
+if (FALSE){
 new.cluster.ids <- c("Excitatory neurons 1", "Excitatory neurons 2", "Inhibitory neurons 1", 
                      "Astrocyte", "Excitatory neurons 3", "Excitatory neurons 4", 
                      "Inhibitory neurons 2", "Inhibitory neurons 3", "OPC",
@@ -157,6 +156,7 @@ new.cluster.ids <- c("Excitatory neurons 1", "Excitatory neurons 2", "Inhibitory
 names(new.cluster.ids) <- levels(data.combined)
 data.combined <- RenameIdents(data.combined, new.cluster.ids)
 DimPlot(data.combined, reduction = "umap", label = TRUE, pt.size = 0.5)
+}
 
 ### generates an expression heatmap for given cells and features.
 DefaultAssay(data.combined) <- "RNA"
@@ -181,6 +181,10 @@ data.combined@meta.data$group = Idents(data.combined)
 FeaturePlot(data.combined, features = markers.to.plot, split.by = "orig.ident", max.cutoff = 3,
             cols = c("grey", "red"))
 
-plots <- VlnPlot(data.combined, features = c("ARID1B", "ASH1L", "CHD2"), split.by = "orig.ident", group.by = "group",
-                 pt.size = 0, combine = FALSE)
-wrap_plots(plots = plots, ncol = 1)
+plots1 <- VlnPlot(data.combined, features = c("ARID1B", "ASH1L", "CHD2", "AFF2"), 
+                 split.by = "orig.ident", group.by = "group", pt.size = 0, combine = FALSE)
+wrap_plots(plots = plots1)
+
+plots2 <- VlnPlot(data.combined, features = c("MECP2", "CACNA1C", "SHANK2", "ATRX"), 
+                  split.by = "orig.ident", group.by = "group", pt.size = 0, combine = FALSE)
+wrap_plots(plots = plots2)
