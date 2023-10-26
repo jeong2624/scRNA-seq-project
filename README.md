@@ -2,7 +2,7 @@
 
 This is my scRNA-seq analysis project for Single cell Genomics class in 1st semester, 2022. (Graduate class, Soongsil University)
 
-My project is that analyzing Autism Spectrum Disorder (ASD) in terms of single-cell RNA sequencing.
+My project is to analyze Autism Spectrum Disorder (ASD) in terms of single-cell RNA sequencing.
 
 ### We used the analysis tools for my project.
 * R >= 4.1.1
