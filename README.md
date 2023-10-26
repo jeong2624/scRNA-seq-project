@@ -1,6 +1,9 @@
-# Single_cell_Genomics_Class
+## Project name : Autism Spectrum Disorder single cell transcriptome profiles
 
-This is my scRNA-seq analysis project for Single cell Genomics class in 1st semester, 2022. (Graduate class, Soongsil University)
+#### Project time : 2022.03.08 - 2022.06.14
+
+#### Description :
+* The project was conducted as part of Single cell Genomics class in Department of Bioinformatics at Soongsil University, Korea.
 
 My project is to analyze Autism Spectrum Disorder (ASD) in terms of single-cell RNA sequencing.
 
