@@ -3,7 +3,7 @@
 #### Project time : 2022.03.08 - 2022.06.14
 
 #### Description :
-* The project was conducted as part of the single-cell genomics class in the Department of Bioinformatics at Soongsil University, Korea.
+* The project was conducted as part of "single-cell genomics" class in the Department of Bioinformatics at Soongsil University, Korea.
 * The purpose of this project is to analyze Autism Spectrum Disorder (ASD) in terms of single-cell RNA sequencing.
 * According to this project, I want to check gene expression of ASD (Autism Spectrum Disorder) for each cell type to check E/I imbalance hypothesis.
 
